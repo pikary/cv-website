@@ -1,0 +1,35 @@
+.navigation {
+    &__item {
+        display: flex;
+        gap: 20px;
+        font-size: var(--font-size-m);
+        padding: 19.5px 0 19.5px 20px;
+        color: var(--inactive-color);
+        &.active{
+            color:var(--primary-color)
+        }
+        &:hover {
+            cursor: pointer;
+            color: var(--primary-color);
+        }
+
+        svg {
+            color: inherit
+        }
+
+        &-link {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            &{
+                &-link{
+                    display: none;
+                }
+            }
+        }
+
+    }
+
+}

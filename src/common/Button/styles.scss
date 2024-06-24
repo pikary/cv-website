@@ -1,0 +1,17 @@
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    gap: 5px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+
+    &:hover{
+        background-color: var(--primary-color);
+    }
+}

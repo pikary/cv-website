@@ -1,0 +1,13 @@
+.loader{
+    width: fit-content;
+    height: fit-content;
+    svg{
+        color: var(--primary-color);
+        animation: spin 1s cubic-bezier(.46,.24,.75,.98) infinite;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }        
+    }
+}

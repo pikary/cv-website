@@ -1,0 +1,17 @@
+.box{
+    position: relative;
+    margin: 40px 40px 0 40px;
+
+    &__title{
+        font-size: var(--font-size-l);
+        color: var(--primary-color);
+        font-weight: 700;
+        padding-bottom: 40px;
+    }
+    p{
+        font-size: var(--font-size-sm);
+        font-weight: 400;
+        line-height: 1.31rem;
+
+    }
+}

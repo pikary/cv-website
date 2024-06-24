@@ -1,0 +1,42 @@
+.inner {
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        flex: 1;
+        // padding: 40px 40px;
+        transition: margin 0.3s linear;
+        padding-bottom: 20px;
+
+      
+        &.active {
+            margin-left: 250px;
+        }
+
+        .up-btn {
+            position: fixed;
+            bottom: 0;
+            right: 50px;
+            padding: 9px 10px;
+            border-radius: 0;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+            &:hover {
+                background-color: var(--secondary-color);
+            }
+        }
+    }
+}
+
+
+@media (max-width: 600px) {
+    .inner{
+        main{
+            &.active {
+                margin-left: 55px;
+            }
+        }
+    }
+    
+}

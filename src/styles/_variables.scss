@@ -1,0 +1,28 @@
+// Color Palette
+$primary-color: #3498db;    // A nice blue
+$secondary-color: #e74c3c;  // A vibrant red
+$accent-color: #f1c40f;     // A bright yellow
+
+// Typography
+$font-primary: 'Helvetica Neue', Arial, sans-serif;
+$font-secondary: 'Times New Roman', serif;
+
+// Font Sizes
+$font-size-base: 16px;      // Base font size
+$font-size-large: 24px;     // Large font size
+$font-size-small: 12px;     // Small font size
+
+// Spacing
+$spacing-small: 8px;
+$spacing-medium: 16px;
+$spacing-large: 32px;
+
+// Borders
+$border-radius: 5px;        // Standard border radius
+$border-style: solid;       // Standard border style
+$border-color: #ccc;        // Standard border color
+
+// Breakpoints for responsive design
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;

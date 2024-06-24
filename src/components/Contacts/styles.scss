@@ -1,0 +1,37 @@
+.address{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &__item{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        
+        svg{
+            color:var(--primary-color)    
+        }
+        &__info{
+            font-size: var(--font-size-m);
+            a{
+                display: block;
+                font-size: inherit;
+                text-decoration: none;
+                &[is-title="true"]:hover{
+                    text-decoration: none;
+                    cursor: default;
+                }
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            &-header{
+                color: black;
+            }
+            &-value{
+                font-weight: 300;
+                color: var(--inactive-color);
+
+            }
+        }
+    }
+}

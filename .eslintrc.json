@@ -1,0 +1,66 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 80,
+        "trailingComma": "es5",
+        "semi": true,
+        "jsxSingleQuote": true,
+        "singleQuote": true,
+        "useTabs": true,
+        "endOfLine": "auto",
+        "max-len": [
+          "error",
+          {
+            "code": 80
+          }
+        ],
+        "importOrder": [
+          "^react(.*)$",
+          "<THIRD_PARTY_MODULES>",
+          "./types",
+          "^[.](?!.*.(scss|css)$).*$",
+          "(.*).(scss|css)$"
+        ],
+        "importOrderSeparation": true,
+        "importOrderSortSpecifiers": true,
+        "jsxBracketSameLine": false,
+        "jsxSingleQuote": true,
+        "quoteProps": "as-needed",
+        "tabWidth": 4,
+        "useTabs": true,
+        "overrides": [
+          {
+            "files": "*.json",
+            "options": {
+              "tabWidth": 4
+            }
+          }
+        ]
+      }
+    ],
+    "no-duplicate-imports": "error",
+    "react/no-unknown-property": "off"
+  }
+}
