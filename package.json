@@ -56,6 +56,12 @@
     "vite": "^5.3.1",
     "vitest": "^1.6.0"
   },
+  "husky": {
+    "hooks": {
+      "precommit": "npm test",
+      "prepush": "npm test"
+    }
+  },
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
@@ -69,11 +75,6 @@
         "statements": 40
       }
     }
-  },
-  "husky": {
-    "hooks": {
-      "precommit": "npm test",
-      "prepush": "npm run test:cov"
-    }
   }
+  
 }
