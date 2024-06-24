@@ -1,5 +1,5 @@
-import React, { RefObject, useEffect } from 'react';
-import { useField, useFormik } from 'formik';
+import React from 'react';
+import { useField } from 'formik';
 import './styles.scss';
 
 interface InputProps {
@@ -10,6 +10,7 @@ interface InputProps {
 	onChange?: () => void;
 }
 
+//totest husky
 const Input: React.FC<InputProps> = ({ labelText, onChange, ...props }) => {
 	const [field, meta] = useField(props);
 

@@ -7,9 +7,14 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const Button: React.FC<ButtonProps> = (props) => {
-	const { onClick, className, type, children,disabled } = props;
+	const { onClick, className, type, children, disabled } = props;
 	return (
-		<button type={type} onClick={onClick} className={'button ' + className} disabled={disabled}>
+		<button
+			type={type}
+			onClick={onClick}
+			className={'button ' + className}
+			disabled={disabled}
+		>
 			{children}
 		</button>
 	);

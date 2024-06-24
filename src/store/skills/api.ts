@@ -1,7 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import { Skill } from './types';
 import baseRequest from '../../lib/baseApi';
-import { error } from 'console';
 
 interface Response<T> {
 	message: string;
