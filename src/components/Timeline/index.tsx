@@ -4,7 +4,7 @@ import './styles.scss';
 import { fetchEducations } from '../../store/education/api';
 import Loader from '../../common/Loader';
 const Timeline: React.FC = () => {
-	// const [data, setData] = useState<Education[]>([]);
+	// const [data, setData] = useState<Education[]>([]); test husky3
 	const { isLoading, data, error } = useTypedSelector(
 		(state) => state.education
 	);

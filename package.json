@@ -72,8 +72,8 @@
   },
   "husky": {
     "hooks": {
-      "precommit": "jest",
-      "prepush": "npm test"
+      "precommit": "npm test",
+      "prepush": "npm run test:cov"
     }
   }
 }
