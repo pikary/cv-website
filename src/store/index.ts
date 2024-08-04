@@ -3,7 +3,7 @@ import { combineReducers } from 'redux';
 import SkillsReducer from './skills/index';
 import EducationReducer from './education/index';
 import { useDispatch, useSelector, TypedUseSelectorHook } from 'react-redux';
-
+//ads
 const rootReducer = combineReducers({
 	skills: SkillsReducer,
 	education: EducationReducer,

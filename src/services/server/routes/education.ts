@@ -1,5 +1,6 @@
 import { Server, Response } from 'miragejs';
 
+//husky
 export const regiterEducationRoute = (context: Server) => {
 	return [
 		context.get(

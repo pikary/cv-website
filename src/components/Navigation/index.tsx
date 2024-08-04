@@ -39,6 +39,7 @@ const Navigation: React.FC = () => {
 			});
 		};
 	}, []);
+
 	return (
 		<ul className='navigation'>
 			<li

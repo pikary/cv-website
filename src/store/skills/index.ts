@@ -48,6 +48,7 @@ const SkillsSlice = createSlice({
 				state.isLoading = false;
 				if (action.payload) {
 					console.log(action.payload);
+
 					state.data.push(action.payload);
 					syncWithLocalStorage(state.data);
 				}

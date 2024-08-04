@@ -84,7 +84,9 @@ const Skills: FC = () => {
 									<Button
 										// eslint-disable-next-line react/prop-types
 										disabled={
-											!props.isValid || !props.dirty || props.isSubmitting
+											!props.isValid ||
+											!props.dirty ||
+											props.isSubmitting
 										}
 										className={`skills__form-container__form-btn ${(props.isValid || !props.dirty) && 'valid'}`}
 										type='submit'

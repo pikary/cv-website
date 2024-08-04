@@ -9,7 +9,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "vitest",
-    "test:cov": "npm test -- --coverage"
+    "test:cov": "npm test -- --coverage",
+    "prepare": "husky"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
@@ -76,5 +77,4 @@
       }
     }
   }
-  
 }
